@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add Book</h1>
+        <nav>
+            <a href="admin.html">Admin Home</a>
+            <a href="manage_books.html">Manage Books</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <form id="addBookForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="year" placeholder="Year" required>
+            <input type="number" id="price" placeholder="Price" required>
+            <button type="submit">Add Book</button>
+        </form>
+    </main>
+    <script src="js/scripts.js"></script>
+    <script>
+        document.getElementById('addBookForm').addEventListener('submit', addBook);
+    </script>
+</body>
+</html>

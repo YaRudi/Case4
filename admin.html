@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="initialize()">
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <a href="admin.html">Admin Home</a>
+            <a href="add_book.html">Add Book</a>
+            <a href="manage_books.html">Manage Books</a>
+            <a href="#" onclick="logoutUser()">Logout</a>
+        </nav>
+    </header>
+    <main>
+    <h2>Admin Dashboard</h2>
+    <div id="adminPanel">
+        <h3>Books Management</h3>
+        <div id="books">
+            <!-- Books will be dynamically displayed here -->
+        </div>
+    </div>
+    <div id="userPanel" style="display: none;">
+        <h3>User Interface</h3>
+        <p>This section is for user interface. You are not authorized as an administrator.</p>
+    </div>
+</main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
